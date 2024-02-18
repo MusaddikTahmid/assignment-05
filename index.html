@@ -158,17 +158,23 @@
         our reliable service and convenient routes.
       </p>
       <!-- greenline paribhan ticket pricing section start-->
-      <div class="bg-white flex justify-between rounded-3xl">
+      <div
+        class="bg-white flex flex-col lg:flex-row justify-between rounded-3xl"
+      >
         <div class="w-full py-11 px-8">
-          <div class="flex justify-between items-center">
-            <div class="flex gap-4">
-              <img src="images/bus-logo.png" alt="" />
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex justify-evenly items-center gap-4">
+              <img class="w-16 h-12" src="images/bus-logo.png" alt="" />
               <div>
-                <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
+                <h3 class="lg:text-3xl text-xl font-bold">
+                  Greenline Paribahan
+                </h3>
                 <p class="#03071299">Coach-009-WEB ! AC_Business</p>
               </div>
             </div>
-            <div class="flex gap-2 bg-[#1DD10026] rounded-xl p-4">
+            <div
+              class="flex justify-center items-center gap-2 w-full lg:w-auto bg-[#1DD10026] rounded-xl p-4 mt-4 lg:mt-0"
+            >
               <img src="images/seat-green.png" alt="" />
               <p class="text-[#1DD100]"><span>40</span> seats left</p>
             </div>
@@ -186,289 +192,321 @@
               <p class="text-[#03071299]">Departure Time</p>
               <p>9:00 PM</p>
             </div>
-            <div class="flex justify-between mt-6">
-              <div class="bg-[#0307120D] rounded-xl py-5 px-4">
-                <p class="text-[#030712CC] font-semibold font-inter">
+            <div
+              class="flex gap-2 flex-wrap lg:flex-nowrap justify-between mt-6"
+            >
+              <div class="bg-[#0307120D] w-full rounded-xl md:py-5 md:px-4 p-3">
+                <p
+                  class="text-[#030712CC] text-center font-semibold font-inter text-xs lg:text-base"
+                >
                   Boarding Point - Laxmipur
                 </p>
               </div>
-              <div class="bg-[#0307120D] rounded-xl py-5 px-4">
-                <p class="text-[#030712CC] font-semibold font-inter">
+              <div class="bg-[#0307120D] w-full rounded-xl md:py-5 md:px-4 p-3">
+                <p
+                  class="text-[#030712CC] text-center font-semibold font-inter text-xs lg:text-base"
+                >
                   Dropping Point - Bogura
                 </p>
               </div>
-              <div class="bg-[#0307120D] rounded-xl py-5 px-4">
-                <p class="text-[#030712CC] font-semibold font-inter">
+              <div class="bg-[#0307120D] w-full rounded-xl md:py-5 md:px-4 p-3">
+                <p
+                  class="text-[#030712CC] text-center font-semibold font-inter text-xs lg:text-base"
+                >
                   Est. Time - 11 Hour
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <img class="" src="images/info-devider.png" alt="" />
+        <img class="hidden lg:block" src="images/info-devider.png" alt="" />
         <div
-          class="font-raleway w-1/5 flex flex-col items-center justify-center"
+          class="font-raleway md:w-1/5 w-full flex flex-col items-center justify-center"
         >
-          <img src="images/fare.png" alt="" />
-          <p class="text-2xl font-semibold">500Taka</p>
-          <p class="text-[#03071299]">Per Seat</p>
+          <div class="flex gap-2 lg:flex-none mb-5 lg:mb-0">
+            <img class="mx-auto size-12" src="images/fare.png" alt="" />
+            <div>
+              <p class="text-2xl font-semibold text-center">500Taka</p>
+              <p class="text-[#03071299] text-center lg:text-start">Per Seat</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- greenline paribhan ticket pricing section end-->
 
       <!-- Bus Seats -->
-      <div class="bg-white mt-5 rounded-3xl py-11 px-8">
+      <div class="bg-white mt-5 rounded-3xl lg:py-11 lg:px-8 p-4">
         <div class="flex justify-between items-center">
           <div class="grid grid-cols-3 gap-2">
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>A</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>A1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>A2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>B</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>B1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>B2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>C</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>C1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>C2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>D</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>D1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>D2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>E</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>E1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>E2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>F</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>F1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>F2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>G</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>G1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>G2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>H</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>H1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>H2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>I</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>I1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>I2</p>
             </div>
 
-            <div class="w-28 h-14 flex items-center justify-center">
+            <div
+              class="lg:w-28 lg:h-14 w-7 h-7 flex items-center justify-center"
+            >
               <p>J</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>J1</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
               <p>J2</p>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-2">
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>A1</p>
+              <p>A3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>A2</p>
-            </div>
-
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>B1</p>
-            </div>
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>B2</p>
+              <p>A4</p>
             </div>
 
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>C1</p>
+              <p>B3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>C2</p>
-            </div>
-
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>D1</p>
-            </div>
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>D2</p>
+              <p>B4</p>
             </div>
 
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>E1</p>
+              <p>C3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>E2</p>
-            </div>
-
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>F1</p>
-            </div>
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>F2</p>
+              <p>C4</p>
             </div>
 
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>G1</p>
+              <p>D3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>G2</p>
-            </div>
-
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>H1</p>
-            </div>
-            <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
-            >
-              <p>H2</p>
+              <p>D4</p>
             </div>
 
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>I1</p>
+              <p>E3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>I2</p>
+              <p>E4</p>
             </div>
 
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>J1</p>
+              <p>F3</p>
             </div>
             <div
-              class="w-28 h-14 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
             >
-              <p>J2</p>
+              <p>F4</p>
+            </div>
+
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>G3</p>
+            </div>
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>G4</p>
+            </div>
+
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>H3</p>
+            </div>
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>H4</p>
+            </div>
+
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>I3</p>
+            </div>
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>I4</p>
+            </div>
+
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>J3</p>
+            </div>
+            <div
+              class="lg:w-28 lg:h-14 w-14 h-7 flex items-center justify-center bg-[#F7F8F8] rounded-lg hover:bg-[#1DD100] hover:text-white cursor-pointer"
+            >
+              <p>J4</p>
             </div>
           </div>
         </div>
