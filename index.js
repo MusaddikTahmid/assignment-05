@@ -14,7 +14,7 @@ function toggleSeatSelection(seat) {
     (selectedSeat) => selectedSeat.name === seatName
   );
 
-  if (isSelected && selectedSeats.length >= 4) {
+  if (isSelected && selectedSeats.length >= maxSeats) {
     seat.classList.remove("selected");
     alert("You can only select up to 4 seats.");
     return;
@@ -22,8 +22,12 @@ function toggleSeatSelection(seat) {
 
   if (isSelected && index === -1) {
     selectedSeats.push(seatName);
+    seat.classList.remove("bg-[#F7F8F8]");
+    seat.classList.add("bg-[#1DD100]"); // Add background color for selected seat
   } else {
     selectedSeats.splice(index, 1);
+    seat.classList.remove("bg-[#1DD100]");
+    seat.classList.add("bg-[#1DD100]");
   }
   updateSeatCount();
 }
