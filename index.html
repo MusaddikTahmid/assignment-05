@@ -591,9 +591,14 @@
               </p>
             </div>
             <div class="flex justify-between bg-white p-2 rounded-lg mt-5">
-              <input placeholder="Have any copupon?" type="text" />
+              <input
+                placeholder="Have any coupon?"
+                id="couponCode"
+                type="text"
+              />
               <div class="-ml-8">
                 <button
+                  onclick="handleCouponCode()"
                   class="text-white font-semibold lg:py-[10px] lg:px-[18px] py-1 px-2 rounded-lg bg-[#1DD100]"
                 >
                   Apply
@@ -602,7 +607,9 @@
             </div>
             <div class="flex justify-between mt-6">
               <p class="text-[#030712] font-medium">Grand Total</p>
-              <p class="text-[#030712] font-medium">BDT 1100</p>
+              <p class="text-[#030712] font-medium">
+                BDT <span id="totalGrandPrice">0</span>
+              </p>
             </div>
           </div>
           <p class="text-[#030712] text-lg font-semibold my-4">

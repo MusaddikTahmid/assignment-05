@@ -4,6 +4,8 @@ const maxSeats = 4;
 // Array to store selected seats
 const selectedSeats = [];
 
+let totalPrice;
+
 // Function to toggle seat selection
 function toggleSeatSelection(seat) {
   const seatName = seat.textContent.trim();
@@ -49,8 +51,35 @@ function updateSeatCount() {
 
   document.getElementById("SeatCountToolTip").innerText = selectedSeats.length;
 
-  document.getElementById("totalTicketPrice").innerText =
-    selectedSeats.length * 550;
+  //  document.getElementById("totalTicketPrice").innerText =
+  //   selectedSeats.length * 550;
+
+  totalPrice = selectedSeats.length * 550;
+  document.getElementById("totalTicketPrice").innerText = totalPrice;
+
+  // document.getElementById('totalGrandPrice').
+}
+
+function handleCouponCode() {
+  const inputValue = document.getElementById("couponCode").value;
+  if (inputValue == "NEW15" && selectedSeats.length === 4) {
+    const discountedPrice = totalPrice * (15 / 100);
+    const grandTotalPrice = totalPrice - discountedPrice;
+    console.log(discountedPrice);
+    return (document.getElementById("totalGrandPrice").innerText =
+      parseInt(grandTotalPrice));
+  } else if (inputValue == "COUPLE20") {
+    const discountedPrice = totalPrice * (20 / 100);
+    const grandTotalPrice = totalPrice - discountedPrice;
+    console.log(discountedPrice);
+    return (document.getElementById("totalGrandPrice").innerText =
+      parseInt(grandTotalPrice));
+  } else {
+    document.getElementById("couponCode").value = "";
+    alert(
+      "You Have Entered The Wrong Coupon Or You Have To Select 4 Seats to Active The Coupon"
+    );
+  }
 }
 
 // Add click event listeners to seats
