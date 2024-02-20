@@ -73,7 +73,7 @@ function handleCouponCode() {
       parseInt(grandTotalPrice);
     document.getElementById("couponDiv").classList.add("hidden");
     return;
-  } else if (inputValue == "COUPLE20") {
+  } else if (inputValue == "Couple 20") {
     const discountedPrice = totalPrice * (20 / 100);
     const grandTotalPrice = totalPrice - discountedPrice;
     document.getElementById("discountedDiv").classList.remove("hidden");
