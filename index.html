@@ -66,13 +66,15 @@
                 <br class="lg:block hidden" />and enjoy top-notch service every
                 step of the way.
               </p>
-              <a
-                href="#buy"
-                id="scrollDiv"
-                class="bg-[#1DD100] font-raleway text-black text-xl font-bold p-4 pr-8 pl-8 rounded-xl hover:bg-[#1dd1001a] border border-[#1dd10066] hover:text-white"
-              >
-                Buy Tickets
-              </a>
+              <div>
+                <a
+                  href="#buy"
+                  id="scrollDiv"
+                  class="bg-[#1DD100] font-raleway text-black text-xl font-bold py-4 pr-8 pl-8 rounded-xl hover:bg-[#1dd1001a] border border-[#1dd10066] hover:text-white"
+                >
+                  Buy Tickets
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -118,9 +120,9 @@
         >
           Best Offer for you
         </h1>
-        <div class="lg:flex space-y-6 justify-between">
+        <div class="lg:flex w-full lg:space-y-0 space-y-6 justify-between">
           <!-- new15 coupon-->
-          <div class="bg-[#FFBF0F] lg:flex rounded-xl">
+          <div class="bg-[#FFBF0F] max-w-[573px] w-full lg:flex rounded-xl">
             <div
               class="flex flex-col justify-center items-center lg:items-start p-6 lg:p-12"
             >
@@ -143,9 +145,9 @@
             </div>
           </div>
           <!-- couple coupon -->
-          <div class="bg-[#F78C9C] lg:flex rounded-xl">
+          <div class="bg-[#F78C9C] max-w-[573px] w-full lg:flex rounded-xl">
             <div
-              class="flex flex-col justify-center items-center lg:items-start p-6 lg:p-12"
+              class="flex flex-col justify-center items-center lg:items-start p-6 lg:p-9"
             >
               <h2 class="text-4xl font-black font-inter">20% OFF</h2>
               <p class="text-xl font-bold">on your next purchase</p>
@@ -266,7 +268,7 @@
             <div class="flex gap-2 lg:flex-none mb-5 lg:mb-0">
               <img class="mx-auto size-12" src="images/fare.png" alt="" />
               <div>
-                <p class="text-2xl font-semibold text-center">500Taka</p>
+                <p class="text-2xl font-semibold text-center">550Taka</p>
                 <p class="text-[#03071299] text-center lg:text-start">
                   Per Seat
                 </p>
@@ -659,7 +661,7 @@
               />
             </div>
             <p class="text-[#030712] text-lg font-semibold my-4">
-              Phone Number*
+              Phone Number *
             </p>
             <div class="w-full">
               <input
@@ -684,7 +686,7 @@
               <button
                 id="nextButton"
                 onclick="blockHidden()"
-                class="bg-[#1DD100] rounded-xl hover:uppercase text-white font-extrabold text-xl py-5 w-full"
+                class="bg-[#1DD100] btn btn-disabled rounded-xl hover:uppercase text-white font-extrabold text-xl w-full"
               >
                 Next
               </button>
@@ -752,7 +754,7 @@
       class="bg-[#F2F1F1] flex justify-center hidden items-center"
     >
       <div
-        class="bg-white w-[718px] h-[481px] mx-auto my-44 text-center py-14 rounded-xl font-roboto"
+        class="bg-white lg:w-[718px] lg:h-[481px] mx-auto my-20 lg:my-44 text-center lg:py-14 py-7 rounded-xl font-roboto"
       >
         <div class="w-full flex items-center justify-center">
           <img class="" src="images/success.png" alt="" />
@@ -776,5 +778,20 @@
 
     <!-- success part end-->
     <script src="index.js"></script>
+    <script>
+      document
+        .getElementById("scrollDiv")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetDiv = document.getElementById("buy");
+          const offsetTop =
+            targetDiv.getBoundingClientRect().top + window.scrollY;
+
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth", // Smooth scrolling behavior
+          });
+        });
+    </script>
   </body>
 </html>

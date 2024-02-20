@@ -28,6 +28,7 @@ function toggleSeatSelection(seat) {
     seat.classList.add("bg-[#F7F8F8]");
   }
   updateSeatCount();
+  updateNextButtonState();
 }
 
 // Function to update seat count
@@ -92,11 +93,22 @@ function handleCouponCode() {
 
 // next button
 
-const numberValue = document.getElementById("phoneNumber").value;
+const phoneNumberInput = document.getElementById("phoneNumber");
+phoneNumberInput.addEventListener("input", updateNextButtonState);
 
-if (selectedSeats.length > 0 && numberValue.length > 0) {
-  document.getElementById("nextButton").classList.remove("btn-disabled");
+// Function to update next button state
+function updateNextButtonState() {
+  const phoneNumberValue = phoneNumberInput.value.trim();
+  const nextButton = document.getElementById("nextButton");
+
+  // Check if both seats are selected and phone number is entered
+  if (selectedSeats.length > 0 && phoneNumberValue.length > 0) {
+    nextButton.classList.remove("btn-disabled");
+  } else {
+    nextButton.classList.add("btn-disabled");
+  }
 }
+
 function blockHidden() {
   document.getElementById("main").classList.remove("block");
   document.getElementById("main").classList.add("hidden");
